@@ -7,7 +7,7 @@
 
 # Terraform directories
 .terraform/
-.terraform.lock.hcl
+# .terraform.lock.hcl  # Uncomment if you want to ignore lock files
 
 # Crash log files
 crash.log
@@ -91,9 +91,36 @@ temp/
 .aws/
 credentials
 .aws/credentials
+aws-credentials.json
+aws-config.json
+
+# SSH keys
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
 
 # Local environment files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env
+
+# Terraform plan files (may contain sensitive data)
+*.tfplan
+*.tfplan.*
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Personal notes and temporary files
+notes.txt
+TODO.txt
+temp.txt
